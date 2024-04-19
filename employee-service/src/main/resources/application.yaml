@@ -1,0 +1,14 @@
+#All the configurations are added in employee-service.yaml(name that we specify below should match) file of config-server repository
+spring:
+  application:
+    name: employee-service
+  config:
+    import: "optional:configserver:http://localhost:8088"
+
+#For Zipkin
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+

@@ -1,0 +1,21 @@
+
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8É§ÉËé1
+_
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8É§ÉËé1
+_
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8É§ÉËé1
+X	java:S125@"<This block of commented-out lines of code should be removed.(Ú°à¬8Ñ§ÉËé1
+X	java:S125P"<This block of commented-out lines of code should be removed.(„®‚8Ò§ÉËé1
+X	java:S125Y"<This block of commented-out lines of code should be removed.(å°äŠ8µì£éé1
+W	java:S125\"<This block of commented-out lines of code should be removed.(‰£èc8Ó§ÉËé1
+m
+java:S1128"PRemove this unused import 'org.springframework.core.ParameterizedTypeReference'.(©ç8¹ì£éé1
+b
+java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ8ºì£éé1
+O
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8Í¦ËËé1
+L
+java:S1068&"0Remove this unused "restTemplate" private field.(¡•ƒo8ºì£éé1
+c
+java:S1144S"FRemove this unused private "callingEmployeesUsingRestTemplate" method.(úÍŠ…8Ô§ÉËé1
