@@ -23,14 +23,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+<!--		Added below dependency for registering service as Eureka client-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+<!--		Added below dependency for Actuator health check-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+<!--		Service Communication starts-->
 <!--		Added below dependency for web client-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -46,6 +49,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
+<!--		Service Communication ends-->
 
 		<dependency>
 			<groupId>com.h2database</groupId>
