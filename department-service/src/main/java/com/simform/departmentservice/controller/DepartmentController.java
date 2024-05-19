@@ -109,7 +109,7 @@ public class DepartmentController {
     {
         // Rest Template
 //        LOGGER.info("Using RestTemplate");
-//        Employee[] employees =  restTemplate.getForObject("http://localhost:8083/employee/department/"+id, Employee[].class);
+//        Employee[] employees =  restTemplate.getForObject("http://localhost:8082/employee/department/"+id, Employee[].class);
         //OR use the service name instead to refrain from hardcoding host and port details. For implementing this, add
         //@LoadBalanced annotation in RestTemplateConfig
 //        Employee[] employees =  restTemplate.getForObject("http://EMPLOYEE-SERVICE/employee/department/"+id, Employee[].class);
@@ -118,7 +118,7 @@ public class DepartmentController {
         //OR
 //        return Arrays.asList(employees);
         //OR
-        /*return restTemplate.exchange("http://localhost:8083/employee/department/"+id,
+        /*return restTemplate.exchange("http://localhost:8082/employee/department/"+id,
                     HttpMethod.GET,
                     null,
                     new ParameterizedTypeReference<List<Employee>>(){}).getBody();*/
