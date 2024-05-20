@@ -14,11 +14,13 @@ Points covered:
 4. Communication using FeignClient
 5. Implementation of config server
 6. Implementation of Api Gateway
+7. Microservice health check using Actuator - department service
 
 References:
 1. https://www.youtube.com/playlist?list=PL0zysOflRCelb2Y4WOVckFC6B050BzV0D
 2. https://www.youtube.com/watch?v=HFl2dzhVuUo&t=768s
 3. https://www.youtube.com/watch?v=yKZVdkrTBTg
+4. https://www.youtube.com/watch?v=OTSDm51vli8
 
 Running 2 spring boot instances:
 

@@ -2,13 +2,21 @@ package com.simform.departmentservice.healthcheck;
 
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
+import org.springframework.stereotype.Component;
 
 /**
  * A custom health check indicator that checks the amount of free memory in the JVM
 */
 
-public class MemoryHealthIndicator implements HealthIndicator
-{
+/**
+ * Some urls:
+ * <a href="http://localhost:8081/actuator">...</a>
+ * a href="http://localhost:8081/actuator/health">...</a>
+ * a href="http://localhost:8081/actuator/beans">...</a>
+ */
+
+@Component
+public class MemoryHealthIndicator implements HealthIndicator {
     @Override
     public Health health() {
         long freeMemory = Runtime.getRuntime().freeMemory();
