@@ -21,6 +21,7 @@ References:
 2. https://www.youtube.com/watch?v=HFl2dzhVuUo&t=768s
 3. https://www.youtube.com/watch?v=yKZVdkrTBTg
 4. https://www.youtube.com/watch?v=OTSDm51vli8
+5. https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
 
 Running 2 spring boot instances:
 
