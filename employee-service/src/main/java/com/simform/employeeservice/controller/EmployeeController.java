@@ -2,6 +2,7 @@ package com.simform.employeeservice.controller;
 
 import com.simform.employeeservice.model.Employee;
 import com.simform.employeeservice.repository.EmployeeRepository;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,10 +35,20 @@ public class EmployeeController {
         return repository.findAll();
     }
 
+//    Implemented circuit breaker. Fallback method is called when this method fails.
+//    For example an id which does not exist is passed
     @GetMapping("/{id}")
+    @CircuitBreaker(name="employeeFindById", fallbackMethod = "runFallbackMethod")
     public Employee findById(@PathVariable("id") Long id) {
         LOGGER.info("Employee find: id={}", id);
         return repository.findById(id);
+    }
+
+//    Circuit breaker fallback method
+//    Fallback method should have exactly same return type as the method who calls it
+    public Employee runFallbackMethod(Exception e){
+//        Pass dummy object back
+        return new Employee(0l, 0l, "Sample", 0, "Unknown");
     }
 
     @GetMapping("/department/{departmentId}")

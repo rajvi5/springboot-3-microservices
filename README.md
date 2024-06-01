@@ -15,6 +15,7 @@ Points covered:
 5. Implementation of config server
 6. Implementation of Api Gateway
 7. Microservice health check using Actuator - department service
+8. Implementing fault tolerance using Resilience4j Circuit Breaker - employee service
 
 References:
 1. https://www.youtube.com/playlist?list=PL0zysOflRCelb2Y4WOVckFC6B050BzV0D
@@ -22,6 +23,9 @@ References:
 3. https://www.youtube.com/watch?v=yKZVdkrTBTg
 4. https://www.youtube.com/watch?v=OTSDm51vli8
 5. https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
+6. https://www.youtube.com/watch?v=3-ChrD3Zosg -Resilience4j Circuit Breaker
+7. https://resilience4j.readme.io/docs/circuitbreaker
+8. https://www.baeldung.com/cs/microservices-cross-cutting-concerns
 
 Running 2 spring boot instances:
 

@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
  * <a href="http://localhost:8081/actuator">...</a>
  * a href="http://localhost:8081/actuator/health">...</a>
  * a href="http://localhost:8081/actuator/beans">...</a>
+ *  * a href="http://localhost:8081/actuator/info">...</a>
  */
 
 @Component

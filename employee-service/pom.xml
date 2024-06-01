@@ -38,14 +38,6 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 <!--		Below dependencies are for Zipkin. Zipkin helps in tracing the calls made to the service from postman or anywhere-->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.cloud</groupId>-->
-<!--			<artifactId>spring-cloud-starter-sleuth</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.cloud</groupId>-->
-<!--			<artifactId>spring-cloud-sleuth-zipkin</artifactId>-->
-<!--		</dependency>-->
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-tracing-bridge-brave</artifactId>
@@ -55,6 +47,18 @@
 			<artifactId>zipkin-reporter-brave</artifactId>
 		</dependency>
 <!--		Zipkin ends-->
+
+<!--		For resilience4j circuit breaker-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.github.resilience4j</groupId>
+			<artifactId>resilience4j-spring-boot3</artifactId>
+		</dependency>
+<!--		For resilience4j circuit breaker-->
+
 
 		<dependency>
 			<groupId>com.h2database</groupId>
